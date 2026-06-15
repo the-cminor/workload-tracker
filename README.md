@@ -1,41 +1,36 @@
-# ⏱ Workload Tracker
+# ⏱️ Workload Tracker
 
-แอพบันทึกชั่วโมงทำงานส่วนตัว — ใช้งานได้บน iPhone เหมือนแอพจริง ไม่ต้องสมัครบัญชี ไม่มีโฆษณา
+A personal work-hours logging app — runs on iPhone like a native app, no account required, no ads.
 
-🔗 **เปิดแอพ:** <https://the-cminor.github.io/workload-tracker/>
+🔗 **Open the app:** https://the-cminor.github.io/workload-tracker/
 
------
+---
 
-## ✨ ฟีเจอร์หลัก
+## ✨ Features
 
-- **บันทึกงานรายวัน** — ระบุชื่องาน เวลาเริ่ม-สิ้นสุด ประเภทงาน โปรเจกต์ และเครื่องมือที่ใช้
-- **ตารางเวลาทำงานยืดหยุ่น** — ตั้งค่าหลายช่วงเวลาต่อวัน มีเวลาพัก ปรับเฉพาะวันได้
-- **บันทึกการลา** — ลาครึ่งวัน หรือไม่กี่ชั่วโมงก็ได้ แจ้งโควต้าวันลาและเพดานโบนัส
-- **งานพิเศษ / ชดเชย** — บันทึกงานนอกเวลาที่ได้ชั่วโมงชดเชย ดูยอดคงเหลือได้
-- **แยกงานนอกเวลาอัตโนมัติ** — งานที่ทำนอกช่วงตารางถูกแยกเพื่อวิเคราะห์
-- **วันหยุดชดเชยอัตโนมัติ** — ถ้าวันหยุดประจำปีตรงกับวันหยุดสัปดาห์ ระบบคำนวณวันหยุดชดเชยให้เอง
-- **แดชบอร์ด** — เลือกดูรายวัน / สัปดาห์ / เดือน / ปี หรือกำหนดช่วงเองได้
-- **Export Excel** — ได้ไฟล์ .xlsx มี 3 sheet พร้อม formula เลือกช่วงเวลาได้
-- **สำรอง / กู้คืน** — Export/Import ไฟล์ JSON เซฟเข้า Google Drive หรือ OneDrive ได้
+- **Daily work logging** — record task name, start/end time, category, project, and tools used
+- **Flexible schedules** — set multiple time windows per day with break periods, override per day as needed
+- **Leave tracking** — log partial-day leave (half day or a few hours), with quota alerts and bonus threshold warnings
+- **Comp time** — mark special/overtime tasks to earn compensatory hours, track your balance
+- **Auto out-of-schedule detection** — tasks outside your defined schedule are automatically flagged for analysis
+- **Auto compensatory holidays** — if a public holiday falls on a weekly day off, the next working day is automatically marked as a substitute holiday
+- **Dashboard** — view by day / week / month / year or a custom date range
+- **Excel export** — export a `.xlsx` file with 3 sheets (daily tasks, leave, monthly summary) including SUM and % formulas, with date range selection
+- **Backup & restore** — export/import JSON to Google Drive or OneDrive via iOS share sheet
 
------
+---
 
-## 📱 วิธีติดตั้งลง iPhone
+## 📱 Installing on iPhone
 
-1. เปิดลิงก์ด้านบนใน **Safari**
-1. กดปุ่ม **แชร์** → **เพิ่มลงในหน้าจอโฮม**
-1. กด **เพิ่ม** — ได้ไอคอนแอพเต็มจอ พร้อมใช้งาน
+1. Open the link above in **Safari**
+2. Tap the **Share** button → **Add to Home Screen**
+3. Tap **Add** — the app opens full-screen like a native app
 
-> ใช้ออฟไลน์ได้หลังเปิดครั้งแรก · ข้อมูลเก็บในเครื่องคุณเท่านั้น
+> Works offline after the first load · Data is stored on your device only
 
------
+---
 
-## 🔒 ความปลอดภัย
+## 🔒 Privacy & Security
 
-ข้อมูลทั้งหมดเก็บใน **localStorage ของ browser** ในเครื่องคุณเท่านั้น ไม่มีการส่งข้อมูลออกไปยังเซิร์ฟเวอร์ใด GitHub เก็บแค่ไฟล์แอพ ไม่มีข้อมูลผู้ใช้
+All data is stored in your browser's **localStorage** — nothing is ever sent to a server. GitHub only hosts the app files; no user data exists there. Each person who opens the same link sees only their own data.
 
------
-
-## 🛠 เทคโนโลยีที่ใช้
-
-React · Vite · Tailwind CSS · Recharts · SheetJS · GitHub Pages
